@@ -136,7 +136,7 @@ describe BetterUUID do
 
   describe '.to_s' do
     it { s = '6ba7b810-9dad-11d1-80b4-00c04fd430c8'
-         u = BetterUUID.parse(s)
+         u = BetterUUID.parse s
          expect(u.to_s).to eq(s) }
   end
 
@@ -163,7 +163,7 @@ describe BetterUUID do
 
   describe '.to_i' do
     it {  s = '6ba7b810-9dad-11d1-80b4-00c04fd430c8'
-          u = BetterUUID.parse(s)
+          u = BetterUUID.parse s
           i = 0x6ba7b8109dad11d180b400c04fd430c8
           expect(u.to_i).to eq(i) }
   end

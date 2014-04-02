@@ -147,7 +147,7 @@ class BetterUUID
     # A  simple GUID  parser:  just ignores  unknown  characters and  convert
     # hexadecimal dump into 16-octet object.
     def parse(obj)
-      str = obj.to_s.sub %r/\Aurn:uuid:/, ''
+      str = obj.dup.to_s.sub %r/\Aurn:uuid:/, ''
       str.gsub! %r/[^0-9A-Fa-f]/, ''
       raw = str[0..31].lines.to_a.pack 'H*'
       ret = new raw
