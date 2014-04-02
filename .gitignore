@@ -1,8 +1,9 @@
-/vendor/cache
-/vendor/bundle
-/.bundle
+/vendor/cache/
+/vendor/bundle/
+/.bundle/
 
 *.gem
 Gemfile.lock
 
 *.swp
+/tmp/
