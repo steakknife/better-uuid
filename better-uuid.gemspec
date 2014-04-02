@@ -20,5 +20,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'should_not'
-  s.add_development_dependency 'absolute_time'
+  s.add_development_dependency 'absolute_time' unless RUBY_PLATFORM == 'java'
 end
