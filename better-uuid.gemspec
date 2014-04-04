@@ -17,9 +17,9 @@ Gem::Specification.new do |s|
   s.test_files = Dir['spec/**/*', '.rspec']
   s.require_path = 'lib'
 
-  s.add_development_dependency 'rake'
-  s.add_development_dependency 'rspec'
-  s.add_development_dependency 'should_not'
-  s.add_development_dependency 'absolute_time' unless RUBY_PLATFORM == 'java'
+  s.add_development_dependency 'rake', '~> 0'
+  s.add_development_dependency 'rspec', '~> 0'
+  s.add_development_dependency 'should_not', '~> 0'
+  s.add_development_dependency 'absolute_time', '~> 0' unless RUBY_PLATFORM == 'java'
 end
 .tap {|gem| pk = File.expand_path(File.join('~/.keys', 'gem-private_key.pem')); gem.signing_key = pk if File.exist? pk; gem.cert_chain = ['gem-public_cert.pem']} # pressed firmly by waxseal
