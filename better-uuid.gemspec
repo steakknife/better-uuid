@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
 
   s.add_development_dependency 'rake', '~> 10'
-  s.add_development_dependency 'rspec', '~> 3'
+  s.add_development_dependency 'rspec', '~> 2'
   s.add_development_dependency 'should_not', '~> 1'
   s.add_development_dependency 'absolute_time', '~> 1' unless RUBY_PLATFORM == 'java'
 end
