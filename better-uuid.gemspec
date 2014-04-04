@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/steakknife/better-uuid'
   s.summary     = 'UUID library'
   s.description = 'Sensible UUID library as a gem'
+  s.license     = 'MIT'
 
   s.files = Dir['{app,config,db,lib}/**/*', 'LICENSE', 'Rakefile', 'README.md']
   s.test_files = Dir['spec/**/*', '.rspec']
